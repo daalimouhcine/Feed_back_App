@@ -1,9 +1,13 @@
 import React from 'react'
 
-function header({text}) {
+function Header({text}) {
   return (
     <div>{text}</div>
   )
 }
 
-export default header;
+Header.defaultProps = {
+    text: 'Feedback UI',
+}
+
+export default Header;
